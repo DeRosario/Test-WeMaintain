@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  web-backend:
+    image: node
+    ports:
+      - "80:8888"
+    volumes:
+      - ./build-backend:/build-backend
+    container_name: backend-container
+    links:
+      - mongo-db
+    command: node ./build-backend/server.js
+  mongo-db:
+    image: mongo
+    ports:
+      - "27001:27017"
+    container_name: db-container
