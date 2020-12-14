@@ -64,11 +64,11 @@ Example :
 
 #### - Describe in detail how you would store and query the data, and what kind of mechanism you would leverage to consistently deliver short response times and guarantee the highest uptime possible.
 
-1 - Indexation of uniques values (SQL / NoSQL).
-2 - SQL use of Views (Virtual Tables) with the joins requests.
-3 - Caching response with Redis.
-4 - Use pagination in API call to send data parts by parts, and not everything at once.
-5 - Microservices architecture :
+1. Indexation of uniques values (SQL / NoSQL).
+2. SQL use of Views (Virtual Tables) with the joins requests.
+3. Caching response with Redis.
+4. Use pagination in API call to send data parts by parts, and not everything at once.
+5. Microservices architecture :
 Microservices architecture provides long-term agility. Better maintainability in complex, large, and highly-scalable systems by letting you create applications based on many independently deployable services.
 Microservices can scale out independently. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled.
 
